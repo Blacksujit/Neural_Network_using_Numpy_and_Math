@@ -6,6 +6,10 @@
 
 Welcome to the Neural Network XOR Predictor! 🎉 This project demonstrates a simple neural network that learns and predicts the XOR logic gate. It showcases the power of neural networks and provides an interactive web interface to explore neural network predictions.
 
+### Live Project:
+
+https://neural-network-using-numpy-and-math.onrender.com/
+
 # Web Page:
 
 
