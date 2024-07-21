@@ -107,7 +107,7 @@ For any questions or suggestions, please contact me at [nirmalsujit861@gmail.com
 
 ## 🔗 Links
 
-- [Project Repository](https://github.com/yourusername/neural-network-xor-predictor)
+- [Project Repository](https://github.com/Blacksujit/Neural_Network_using_Numpy_and_Math.git)
 - [Live Demo](http://your-live-demo-url)
 
 ## 📜 License
