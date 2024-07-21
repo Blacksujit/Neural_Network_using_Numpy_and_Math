@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neural Network XOR Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script>
+        async function predict() {
+            const input1 = parseInt(document.getElementById('input1').value);
+            const input2 = parseInt(document.getElementById('input2').value);
+            const response = await fetch('/predict', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ input: [input1, input2] })
+            });
+            const data = await response.json();
+            document.getElementById('result').textContent = 'Prediction: ' + data.prediction;
+        }
+
+        function plotNeuralNetwork() {
+            const layers = [
+                { name: 'Input Layer', nodes: 2 },
+                { name: 'Hidden Layer 1', nodes: 4 },
+                { name: 'Hidden Layer 2', nodes: 4 },
+                { name: 'Output Layer', nodes: 1 }
+            ];
+
+            const traces = [];
+            const annotations = [];
+            let xOffset = 0;
+            
+            layers.forEach((layer, layerIndex) => {
+                for (let i = 0; i < layer.nodes; i++) {
+                    traces.push({
+                        x: [xOffset],
+                        y: [i],
+                        mode: 'markers',
+                        marker: { size: 12 },
+                        name: layer.name
+                    });
+                    
+                    annotations.push({
+                        x: xOffset,
+                        y: i,
+                        xref: 'x',
+                        yref: 'y',
+                        text: layer.name + ' ' + (i + 1),
+                        showarrow: false,
+                        font: { size: 12 }
+                    });
+                }
+                xOffset += 2;
+            });
+
+            const layout = {
+                title: 'Neural Network Layers',
+                showlegend: false,
+                xaxis: {
+                    showgrid: false,
+                    zeroline: false,
+                    showline: false,
+                    showticklabels: false
+                },
+                yaxis: {
+                    showgrid: false,
+                    zeroline: false,
+                    showline: false,
+                    showticklabels: false
+                },
+                annotations: annotations
+            };
+
+            Plotly.newPlot('neuralNetworkPlot', traces, layout);
+        }
+
+        window.onload = function() {
+            plotNeuralNetwork();
+        };
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Neural Network XOR Predictor</h1>
+    </header>
+    <main>
+        <section class="predictor">
+            <h2>Try it out</h2>
+            <div class="input-group">
+                <label for="input1">Input 1:</label>
+                <input type="number" id="input1" min="0" max="1">
+            </div>
+            <div class="input-group">
+                <label for="input2">Input 2:</label>
+                <input type="number" id="input2" min="0" max="1">
+            </div>
+            <button onclick="predict()">Predict</button>
+            <p id="result"></p>
+        </section>
+        <section class="how-it-works">
+            <h2>How a Neural Network Works</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/aircAruvnKk" frameborder="0" allowfullscreen></iframe>
+        </section>
+        <section class="neural-animation">
+            <h2>Neural Network Layers</h2>
+            <div id="neuralNetworkPlot" style="width: 100%; height: 400px;"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Neural Network Predictor</p>
+    </footer>
+</body>
+</html>
