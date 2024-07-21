@@ -8,7 +8,7 @@ Welcome to the Neural Network XOR Predictor! 🎉 This project demonstrates a si
 
 ### Live Project:
 
-https://neural-network-using-numpy-and-math.onrender.com/
+[Live Demo] (https://neural-network-using-numpy-and-math.onrender.com/)
 
 # Web Page:
 
