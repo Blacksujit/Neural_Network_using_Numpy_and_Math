@@ -6,6 +6,19 @@
 
 Welcome to the Neural Network XOR Predictor! 🎉 This project demonstrates a simple neural network that learns and predicts the XOR logic gate. It showcases the power of neural networks and provides an interactive web interface to explore neural network predictions.
 
+# Web Page:
+
+
+![image](https://github.com/user-attachments/assets/cf50e557-0011-466f-9207-a5d00b770f17)
+
+
+![image](https://github.com/user-attachments/assets/dc43980a-10a7-4f56-9c55-a99948e1dda5)
+
+
+![image](https://github.com/user-attachments/assets/4c432831-c623-4f29-8ecb-a1d9e615d519)
+
+
+
 ## 🛠️ Features
 
 - **Neural Network Training**: Trains a neural network to predict the XOR logic gate using Python and NumPy.
