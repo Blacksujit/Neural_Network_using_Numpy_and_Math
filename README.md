@@ -54,8 +54,7 @@ neural-network-xor-predictor_using_numpy/
 
 1. **Clone the repository:**
     ```bash
-    git clone https://github.com/yourusername/neural-network-xor-predictor.git
-    cd neural-network-xor-predictor
+    git clone  https://github.com/Blacksujit/Neural_Network_using_Numpy_and_Math.git
     ```
 
 2. **Set up a virtual environment:**
