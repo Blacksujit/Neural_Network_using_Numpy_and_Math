@@ -23,33 +23,6 @@ Welcome to the Neural Network XOR Predictor! 🎉 This project demonstrates a si
 
 
 
-## 🛠️ Features
-
-- **Neural Network Training**: Trains a neural network to predict the XOR logic gate using Python and NumPy.
-- **Interactive Web Interface**: Built with Flask and HTML/CSS to input values and get predictions in real-time.
-- **Visualization**: Includes a Plotly-based animation to visualize the neural network layers.
-- **Educational Video**: Embedded YouTube video explaining how neural networks work.
-
-## 📋 Project Structure
-
-
-Here's a beautiful README file for your project, designed to be engaging and informative. You can create a README.md file in your project directory and use the following content.
-
-README.md
-
-markdown
-Copy code
-# Neural Network XOR Predictor
-
-Welcome to the Neural Network XOR Predictor! 🎉 This project demonstrates a simple neural network that learns and predicts the XOR logic gate. It showcases the power of neural networks and provides an interactive web interface to explore neural network predictions.
-
-## 🛠️ Features
-
-- **Neural Network Training**: Trains a neural network to predict the XOR logic gate using Python and NumPy.
-- **Interactive Web Interface**: Built with Flask and HTML/CSS to input values and get predictions in real-time.
-- **Visualization**: Includes a Plotly-based animation to visualize the neural network layers.
-- **Educational Video**: Embedded YouTube video explaining how neural networks work.
-
 ## 📋 Project Structure
 
 ```
@@ -65,6 +38,19 @@ neural-network-xor-predictor_using_numpy/
 └── README.md # This README file
 
 ```
+
+
+
+## 🛠️ Features
+
+- **Neural Network Training**: Trains a neural network to predict the XOR logic gate using Python and NumPy.
+- **Interactive Web Interface**: Built with Flask and HTML/CSS to input values and get predictions in real-time.
+- **Visualization**: Includes a Plotly-based animation to visualize the neural network layers.
+- **Educational Video**: Embedded YouTube video explaining how neural networks work.
+
+# Neural Network XOR Predictor
+
+Welcome to the Neural Network XOR Predictor! 🎉 This project demonstrates a simple neural network that learns and predicts the XOR logic gate. It showcases the power of neural networks and provides an interactive web interface to explore neural network predictions.
 
 
 ## 🧑‍💻 Installation
@@ -121,3 +107,5 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ---
 
 Thank you for checking out the Neural Network XOR Predictor! We hope you find it insightful and useful. 🚀
+
+---
